@@ -1,0 +1,8 @@
+#this is a webscraping project
+it scrapes product info of your choice from lazada.com.my
+
+files:
+1. lazada.py - contains code for web scraping
+2. analysis.py -  analyze data collected and recommend user the top10 products based on no. of ratings and average rating
+
+TO RUN THIS PROGRAMME : go to the line 72 of analysis.py
