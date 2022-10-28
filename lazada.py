@@ -74,7 +74,7 @@ def writefile(key, data):
 def browse_1(keyword):
     # list to store all item info
     data = [['price','no. of ratings','average rating','link']]
-    browser = Chrome("D:\Documents\OneDrive\PYTHON\chromedriver_win32\chromedriver.exe")
+    browser = Chrome("D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\chromedriver_win32\chromedriver.exe")
     browser.get('https://www.lazada.com.my')
     search_key = browser.find_element(by='name', value='q')
     search_key.send_keys(keyword)
