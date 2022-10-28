@@ -41,7 +41,7 @@ def recommend(productname, method):
     top10 = data_frame['link'].iloc[top10index]
     print('links to the top10 products : ')
     display(top10)
-    browser=Chrome("D:\Documents\OneDrive\PYTHON\Airostrecruit\chromedriver_win32\chromedriver.exe")
+    browser=Chrome("D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\chromedriver_win32\chromedriver.exe")
     i = 1
     for link in top10:
         browser.get('http:' + link)
