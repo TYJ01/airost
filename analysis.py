@@ -60,4 +60,4 @@ def recommend(productname, method):
 # for example, lazada product ipad is saved in the proejct:
 #recommend('ipad', 'saved')  # delete the '#' in the beginning of this line to run the programme
 
-recommend('casio men analog','new')
+recommend('casio men analog','saved')
