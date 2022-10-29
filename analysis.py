@@ -58,6 +58,6 @@ def recommend(productname, method):
 # run : recommend('product name','new') , replace 'product name' with product of your choice
 
 # for example, lazada product ipad is saved in the proejct:
-#recommend('ipad', 'saved')  # delete the '#' in the beginning of this line to run the programme
+#recommend('casio men analog', 'saved')  # delete the '#' in the beginning of this line to run the programme
 
-recommend('casio men analog','saved')
+recommend('pixel3 cover','new')
