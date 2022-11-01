@@ -63,7 +63,7 @@ def stars(bsObject):
 
 
 def writefile(key, data):
-    filename = "D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\lazada product " + key + ".csv"
+    filename = ".\lazada product " + key + ".csv"
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(data)
@@ -74,7 +74,7 @@ def writefile(key, data):
 def browse_1(keyword):
     # list to store all item info
     data = [['price','no. of ratings','average rating','link']]
-    browser = Chrome("D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\chromedriver_win32\chromedriver.exe")
+    browser = Chrome(".\chromedriver_win32\chromedriver.exe")
     browser.get('https://www.lazada.com.my')
     search_key = browser.find_element(by='name', value='q')
     search_key.send_keys(keyword)

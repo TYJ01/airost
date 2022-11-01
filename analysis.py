@@ -29,10 +29,10 @@ def analyze(filepath):
 
 def recommend(productname, method):
     if method == 'saved':
-        analyze("D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\lazada product " + productname + '.csv')
+        analyze(".\lazada product " + productname + '.csv')
     if method == 'new':
         browse_1(productname)
-        analyze("D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\lazada product " + productname + '.csv')
+        analyze(".\lazada product " + productname + '.csv')
     top10index = data_frame['score'].nlargest(n=10).index
     print('index and no. of ratings of top10 products')
     print(data_frame['no. of ratings'].iloc[top10index])
@@ -41,7 +41,7 @@ def recommend(productname, method):
     top10 = data_frame['link'].iloc[top10index]
     print('links to the top10 products : ')
     display(top10)
-    browser=Chrome("D:\Documents\OneDrive\PYTHON\SCRIPTS\Airostrecruit\chromedriver_win32\chromedriver.exe")
+    browser=Chrome(".\chromedriver_win32\chromedriver.exe")
     i = 1
     for link in top10:
         browser.get('http:' + link)
@@ -59,3 +59,4 @@ def recommend(productname, method):
 
 # for example, lazada product ipad is saved in the proejct:
 #recommend('casio men analog', 'saved')  # delete the '#' in the beginning of this line to run the programme
+recommend('CS900 SSD','new')
